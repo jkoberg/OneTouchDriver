@@ -6,6 +6,7 @@ Driver for Ingenious Technology Co Ltd "OneTouch" transparent touchscreen overla
 Copyright 2011, Joe Koberg <joe@osoft.us>
 
 Data format is a 3 or 5 byte report sent at 19200 8N1, either
+
     0xFF 0xFE 0xFE    - Sent upon touch release and sometimes alone on taps/short touches.
     0xFF X0 X1 Y0 Y1  - Where X and Y are little-endian 2-byte integers. Position is the high bits so divide by 64.
 
